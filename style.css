@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.header,
+.main-container {
+  max-width: 800px;
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 30px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header > * {
+  font-size: 1.2rem;
+}
+
+.header input {
+  width: 100px;
+  height: 50px;
+}
+
+.main-container {
+  height: 500px;
+}
+
+.colors-container {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  height: 90%;
+}
+
+.colors-container > * {
+  flex-grow: 1;
+}
+.hex-container {
+  display: flex;
+
+  width: 100%;
+}
+
+.hex-container > * {
+  font-size: 16px;
+  flex-grow: 1;
+  text-align: center;
+  margin-top: 10px;
+  height: 100px;
+}
+
+select,
+#btn {
+  font-family: "Inter";
+}
+#btn {
+  font-size: 18px;
+  padding: 12px 8px;
+  border-radius: 5x;
+  background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  #btn {
+    padding: 0;
+    font-size: 14px;
+  }
+  select {
+    width: 180px;
+  }
+  option {
+    font-size: 14px;
+  }
+  .hex-container > * {
+    font-size: 14px;
+  }
+}
