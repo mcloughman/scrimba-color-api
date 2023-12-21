@@ -25,7 +25,10 @@ function getSchemes() {
         colorsContainer.append(colorDiv)
         const hexDiv = document.createElement("div")
         hexDiv.textContent = color
-        hexContainer.append(hexDiv)
+        hexDiv.addEventListener("click", (e) => {
+          console.log(e.target)
+        })
+        hexContainer.prepend(hexDiv)
       }
     })
 }
